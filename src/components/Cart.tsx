@@ -154,7 +154,7 @@ const Cart = ({ cart, setCart }: { cart: any[], setCart: React.Dispatch<React.Se
             onChange={(e) => setDiscountCode(e.target.value)}
           />
           <button onClick={applyDiscount}>Apply Discount</button>
-          {discount > 0 && <p> ${discount.toLocaleString()}</p>}
+          {discount > 0 && <p style={{ color: 'red' }}> ${discount.toLocaleString()}</p>}
         </div>
         <div className="total-row">
           <p>Grand Total:</p>
